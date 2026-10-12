@@ -1,5 +1,5 @@
 export const AVAILABILITY_OPTIONS = [
-  'Available for backend work',
+  'Available for software work',
   'Open to internships',
   'Booked until exams',
 ] as const;
@@ -23,11 +23,11 @@ export type ProfileFieldErrors = {
 };
 
 export const defaultProfile: Profile = {
-  headline: 'Backend developer with Python and Node.js',
+  headline: 'Programmer working in Python, Java, C, and C++',
   biography:
-    'I study Software Engineering at INES-Ruhengeri. I build backend services with Python and Node.js, and I work on Linux with Git.',
+    'I study Software Engineering at INES-Ruhengeri. I write programs in Python, Java, C, and C++, from small command-line tools to object-oriented applications.',
   primarySkill: 'Python',
-  availability: 'Available for backend work',
+  availability: 'Available for software work',
   portraitUri: null,
   verificationCardUri: null,
 };

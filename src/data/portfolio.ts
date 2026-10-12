@@ -22,64 +22,24 @@ export type Project = {
 
 export const skills: Skill[] = [
   {
-    id: 'linux',
-    name: 'Linux',
-    detail: 'The shell, files, permissions, and processes used to run and inspect a service.',
-  },
-  {
-    id: 'git',
-    name: 'Git',
-    detail: 'Commits, branches, and history so a service can be changed without losing the last working version.',
-  },
-  {
     id: 'python',
-    name: 'Python',
-    detail: 'Scripts and backend services, including reading data and returning a clear result.',
+    name: 'Python programming',
+    detail: 'Readable scripts and programs for automation, data handling, and small command-line tools.',
   },
   {
-    id: 'javascript',
-    name: 'JavaScript',
-    detail: 'The language used to write Node.js servers, request handlers, and small tools.',
+    id: 'java',
+    name: 'Java programming',
+    detail: 'Object-oriented programs with classes, collections, and clear separation between logic and input.',
   },
   {
-    id: 'nodejs',
-    name: 'Node.js',
-    detail: 'HTTP servers that accept a request, run logic, and send a response.',
+    id: 'c',
+    name: 'C programming',
+    detail: 'Low-level programs that manage memory and pointers directly for speed and control.',
   },
   {
-    id: 'rest',
-    name: 'REST APIs',
-    detail: 'Resources, methods, and status codes so a client can use a service without seeing its internals.',
-  },
-  {
-    id: 'http',
-    name: 'HTTP',
-    detail: 'Requests, responses, headers, and status codes between a client and a server.',
-  },
-  {
-    id: 'sql',
-    name: 'SQL',
-    detail: 'Tables, queries, and relational data stored behind an API.',
-  },
-  {
-    id: 'json',
-    name: 'JSON',
-    detail: 'The request and response format used between a backend and its clients.',
-  },
-  {
-    id: 'auth',
-    name: 'Authentication',
-    detail: 'Checking who is calling a route before private data is returned.',
-  },
-  {
-    id: 'testing',
-    name: 'Testing',
-    detail: 'Checks that an endpoint still returns the right status and body after a change.',
-  },
-  {
-    id: 'logging',
-    name: 'Logging',
-    detail: 'A record of what the service did, so a failure can be traced from the terminal.',
+    id: 'cpp',
+    name: 'C++ programming',
+    detail: 'Structured and object-oriented programs that combine the control of C with reusable classes.',
   },
 ];
 
@@ -88,35 +48,53 @@ export const education: EducationItem[] = [
     id: 'ines',
     period: 'September 2024 onward',
     title: 'INES-Ruhengeri',
-    detail: 'Software Engineering. Registration number 25/27014.',
+    detail: 'Software Engineering. Registration number 25/27950.',
   },
 ];
 
 export const projects: Project[] = [
   {
-    id: 'node-api',
-    title: 'Node.js request API',
-    year: '2026 · Backend',
+    id: 'python-automation',
+    title: 'Python automation tool',
+    year: '2026 · Python',
     problem:
-      'A client needed a small HTTP service that accepts JSON, rejects a bad request, and returns a stable response.',
+      'Repeated manual work needed a small tool that could run the same steps and report a clear result each time.',
     contribution:
-      'I wrote the Node.js routes, checked the incoming JSON, and returned status codes and error messages instead of failing silently.',
-    technology: 'JavaScript and Node.js',
+      'I wrote the Python program, broke the task into functions, and handled bad input with clear messages instead of crashing.',
+    technology: 'Python',
   },
   {
-    id: 'python-linux',
-    title: 'Python tools on Linux',
-    year: '2026 · Backend',
+    id: 'java-console-app',
+    title: 'Java console application',
+    year: '2026 · Java',
     problem:
-      'Repeated terminal work needed a repeatable Python tool, with the source kept in Git so a change could be reviewed.',
+      'A small record-keeping task needed classes that could store, list, and search entries from a menu.',
     contribution:
-      'I wrote the Python script on Linux, ran it from the shell, and committed the working version with Git.',
-    technology: 'Python, Linux, and Git',
+      'I designed the Java classes, wired the menu to the logic, and kept input handling separate from the data model.',
+    technology: 'Java',
+  },
+  {
+    id: 'c-file-parser',
+    title: 'C file parser',
+    year: '2026 · C',
+    problem:
+      'A text file needed to be read, checked, and summarised quickly without a heavy runtime.',
+    contribution:
+      'I wrote the C program, managed buffers and pointers carefully, and freed every allocation before exit.',
+    technology: 'C',
+  },
+  {
+    id: 'cpp-inventory',
+    title: 'C++ inventory program',
+    year: '2026 · C++',
+    problem:
+      'A simple inventory needed reusable objects that could add, remove, and total stock items.',
+    contribution:
+      'I built the C++ classes for items and inventory, used the standard library containers, and kept the code modular.',
+    technology: 'C++',
   },
 ];
 
 export const contactLinks = [
-  { label: 'Email moosamagadi@gmail.com', url: 'mailto:moosamagadi@gmail.com' },
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/mohammed-osama-72284420b/' },
-  { label: 'WhatsApp', url: 'https://wa.me/249124215192' },
+  { label: 'Email ehabhamid42@gmail.com', url: 'mailto:ehabhamid42@gmail.com' },
 ] as const;

@@ -28,11 +28,11 @@ SANS_REG = first_existing(
     r"C:\Windows\Fonts\segoeui.ttf",
 )
 
-INK = (3, 7, 14, 255)
-PAPER = (3, 7, 14, 255)
-TERRACOTTA = (165, 116, 61, 255)
-CREAM = (244, 247, 248, 255)
-OLIVE = (155, 205, 221, 255)
+INK = (10, 20, 23, 255)
+PAPER = (10, 20, 23, 255)
+TERRACOTTA = (242, 166, 90, 255)
+CREAM = (237, 245, 244, 255)
+OLIVE = (31, 122, 108, 255)
 
 
 def font(path: str, size: int) -> ImageFont.FreeTypeFont:
@@ -59,7 +59,7 @@ def icon(size: int) -> Image.Image:
         outline=TERRACOTTA,
         width=max(4, size // 48),
     )
-    centered(draw, "MOHH", font(SERIF, int(size * 0.16)), (0, int(size * 0.28), size, int(size * 0.62)), CREAM)
+    centered(draw, "EFMH", font(SERIF, int(size * 0.16)), (0, int(size * 0.28), size, int(size * 0.62)), CREAM)
     centered(draw, "PORTFOLIO", font(SANS, int(size * 0.045)), (0, int(size * 0.62), size, int(size * 0.74)), TERRACOTTA)
     return image
 
@@ -67,7 +67,7 @@ def icon(size: int) -> Image.Image:
 def foreground(size: int = 1024) -> Image.Image:
     image = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    centered(draw, "MOHH", font(SERIF, 180), (180, 340, 844, 620), CREAM)
+    centered(draw, "EFMH", font(SERIF, 180), (180, 340, 844, 620), CREAM)
     centered(draw, "PORTFOLIO", font(SANS, 42), (180, 600, 844, 700), TERRACOTTA)
     return image
 
@@ -75,7 +75,7 @@ def foreground(size: int = 1024) -> Image.Image:
 def monochrome(size: int = 1024) -> Image.Image:
     image = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    centered(draw, "MOHH", font(SERIF, 180), (180, 380, 844, 680), (255, 255, 255, 255))
+    centered(draw, "EFMH", font(SERIF, 180), (180, 380, 844, 680), (255, 255, 255, 255))
     return image
 
 
@@ -83,8 +83,8 @@ def avatar() -> Image.Image:
     size = 900
     image = Image.new("RGBA", (size, size), INK)
     draw = ImageDraw.Draw(image)
-    centered(draw, "MOHH", font(SERIF, 148), (48, 250, size - 48, 520), CREAM)
-    centered(draw, "BACKEND", font(SANS, 36), (48, 500, size - 48, 640), TERRACOTTA)
+    centered(draw, "EFMH", font(SERIF, 148), (48, 250, size - 48, 520), CREAM)
+    centered(draw, "SOFTWARE", font(SANS, 36), (48, 500, size - 48, 640), TERRACOTTA)
     return image
 
 
@@ -93,8 +93,8 @@ def monogram_piece() -> Image.Image:
     draw = ImageDraw.Draw(image)
     draw.rectangle((0, 0, 1200, 18), fill=TERRACOTTA)
     draw.rectangle((48, 70, 1152, 790), outline=INK, width=3)
-    centered(draw, "MOHH", font(SERIF, 210), (80, 180, 1120, 520), INK)
-    centered(draw, "MOHAMMED OSAMA HASAN HOSSEIN", font(SANS, 28), (80, 540, 1120, 620), TERRACOTTA)
+    centered(draw, "EFMH", font(SERIF, 210), (80, 180, 1120, 520), INK)
+    centered(draw, "EHAB FAKHRALDEN MOHAMED HAMID", font(SANS, 28), (80, 540, 1120, 620), TERRACOTTA)
     centered(draw, "A one-color monogram for print and screen", font(SANS_REG, 26), (80, 640, 1120, 720), OLIVE)
     return image
 
@@ -109,7 +109,7 @@ def poster_piece() -> Image.Image:
     draw.rectangle((90, 500, 360, 512), fill=TERRACOTTA)
     body = "A type study that stays readable\nas a poster and as a square crop."
     draw.multiline_text((90, 560), body, font=font(SANS_REG, 32), fill=PAPER, spacing=10)
-    draw.text((90, 760), "MOHH  ·  2026", font=font(SANS, 24), fill=(231, 179, 154, 255))
+    draw.text((90, 760), "EFMH  ·  2026", font=font(SANS, 24), fill=(231, 179, 154, 255))
     return image
 
 

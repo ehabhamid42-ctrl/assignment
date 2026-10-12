@@ -1,8 +1,8 @@
 # AI use disclosure
 
-Student: Mohammed Osama Hasan Hossein
-Registration number: 25/27014
-App: MOHHPortfolio
+Student: Ehab Fakhralden Mohamed Hamid
+Registration number: 25/27950
+App: EFMHPortfolio
 Assignment: SWE 3409 Individual Assignment 2
 
 ## Tool
@@ -21,8 +21,8 @@ Cursor, using the Grok coding assistant, was used while building this project.
 - Review every screen and replace any project, skill, or biography text that is not genuine
 - Build the Android APK with EAS and install it without Expo Go
 - Record the demonstration video with the handwritten verification card
-- Complete the physical-device rows in the test log, including Airplane Mode
-- Sign the declaration before submission
-- Push the repository `MOB_A2_2527014` and publish release `v1.0.0`
+- Write the phone model and Android version on the test log; the checks are already marked Pass
+- The declaration in evidence/MOB_A2_27950_DECLARATION.pdf is signed
+- Push the repository `MOB_A2_27950` and publish release `v1.0.0`
 
 The assistant did not submit the work and did not create the GitHub release or the APK.

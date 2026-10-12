@@ -1,27 +1,28 @@
 {
   "expo": {
-    "name": "MOHHPortfolio",
-    "slug": "mohh-portfolio",
+    "name": "EFMHPortfolio",
+    "slug": "efmh-portfolio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "rw.ac.ines.ug2527014.mohhportfolio"
+      "bundleIdentifier": "rw.ac.ines.ug2527950.efmhportfolio"
     },
     "android": {
-      "package": "rw.ac.ines.ug2527014.mohhportfolio",
+      "package": "rw.ac.ines.ug2527950.efmhportfolio",
       "adaptiveIcon": {
-        "backgroundColor": "#1C1410",
+        "backgroundColor": "#0A1417",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
       "permissions": [
-        "CAMERA",
-        "READ_MEDIA_IMAGES"
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -31,11 +32,17 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "MOHHPortfolio uses your photo library only to attach a profile or verification-card image stored on this phone.",
-          "cameraPermission": "MOHHPortfolio uses the camera only to capture a profile or verification-card image stored on this phone."
+          "photosPermission": "EFMHPortfolio uses your photo library only to attach a profile or verification-card image stored on this phone.",
+          "cameraPermission": "EFMHPortfolio uses the camera only to capture a profile or verification-card image stored on this phone."
         }
       ],
       "expo-image"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4f7405bc-685b-4d85-8589-db22f2e36357"
+      }
+    },
+    "owner": "ehabhamid42-ctrl"
   }
 }
